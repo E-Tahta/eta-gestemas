@@ -1,3 +1,10 @@
+eta-gestemas (0.1.6-1) unstable; urgency=medium
+
+  * local package
+  * Upstream bumps version
+
+ -- Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>  Tue, 08 Mar 2016 09:33:37 +0200
+
 eta-gestemas (0.1.5-1) unstable; urgency=medium
 
   * local package

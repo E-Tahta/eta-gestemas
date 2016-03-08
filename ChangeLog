@@ -1,6 +1,10 @@
+2016-03-08  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
+
+	* CMakeLists.txt: Bump version
+
 2016-03-03  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
 
-	* eta_gestemas: Fix multi-user startup problem
+	* ChangeLog, eta_gestemas: Fix multi-user startup problem
 
 2016-03-03  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
 

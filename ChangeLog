@@ -1,6 +1,11 @@
+2016-03-16  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
+
+	* CMakeLists.txt, recognizers.xml: Add a new long press to fix
+	combobox problems with firefox
+
 2016-03-08  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
 
-	* CMakeLists.txt: Bump version
+	* CMakeLists.txt, ChangeLog: Bump version
 
 2016-03-03  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
 

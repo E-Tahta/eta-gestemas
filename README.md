@@ -153,7 +153,7 @@ Here is how you could create a debian package.
 ```bash
 git checkout master
 git pull
-git checkout -b debian/sid
+git checkout debian/sid
 git merge vx.y.z # merge new tag
 sudo apt-get install git-buildpackage # if you don't have it
 gbp dch --release --auto # edit debian/changelog

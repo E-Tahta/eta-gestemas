@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gestemas>
   <!-- Gesture recognizer settings -->
-  <samplingPeriod>120</samplingPeriod>
-  <pointerEmulationRate>2</pointerEmulationRate>
+  <samplingPeriod>100</samplingPeriod>
+  <pointerEmulationRate>1</pointerEmulationRate>
   <pointerEmulationDistance>10.0</pointerEmulationDistance>
   <!-- Global gesture recognizers that effect public targets -->
   <GlobalTarget>
@@ -21,6 +21,22 @@
             <onEnded>release</onEnded>
             <onCanceled>release</onCanceled>
             <button>3</button>
+          </PressReleaseShortcut>
+        </XTestSimple>
+      </LongPress>
+      <!-- We need this for Firefox and live-installer comboboxes to work -->
+      <LongPress id="9">
+        <numTouchesRequired>1</numTouchesRequired>
+        <!-- minPressDuration > samplingPeriod -->
+        <minPressDuration>115</minPressDuration>
+        <recognitionThreshold>9.0</recognitionThreshold>
+        <abortList>
+          <allowSimultaneousRecognition>true</allowSimultaneousRecognition>
+        </abortList>
+        <XTestSimple>
+          <PressReleaseShortcut>
+            <onEnded>press-release</onEnded>
+            <button>1</button>
           </PressReleaseShortcut>
         </XTestSimple>
       </LongPress>
@@ -60,6 +76,7 @@
         <abortList>
           <allowSimultaneousRecognition>true</allowSimultaneousRecognition>
           <id>5</id>
+          <id>2</id>
         </abortList>
         <XTestScroll>
           <minEffectiveVelocity>2.0</minEffectiveVelocity>
@@ -83,6 +100,7 @@
         <abortList>
           <allowSimultaneousRecognition>true</allowSimultaneousRecognition>
           <id>4</id>
+          <id>2</id>
         </abortList>
         <XTestZoom>
           <minEffectiveVelocity>0.5</minEffectiveVelocity>

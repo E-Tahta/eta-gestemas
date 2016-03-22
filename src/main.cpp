@@ -27,6 +27,7 @@
 #include <QtCore/QFileInfo>
 #include <QtCore/QFile>
 #include <QtCore/QDir>
+#include <QtCore/QDebug>
 #include "libframetouchmanager.h"
 
 bool fileExists(QString path);
@@ -57,13 +58,31 @@ int main(int argc, char *argv[])
 
     if (!fileExists(recognizersFile)) {
         Q_ASSERT(fileExists(GESTEMAS_CONFIG_SYSTEM_PATH));
-        QFileInfo fi(recognizersFile);
-        QString path = fi.path();
-        QDir dir(path);
-        if (!dir.exists()) {
-            dir.mkpath(".");
-        }
-        QFile::copy(GESTEMAS_CONFIG_SYSTEM_PATH, recognizersFile);
+        // Don't copy to user path, but rather use system config as default
+        // Users can manually copy with
+
+        // mkdir -p ~/.config/eta/eta-gestemas &&   \
+        // cp /etc/eta/eta-gestemas/recognizers.xml \
+        // ~/.config/eta/eta-gestemas/recognizers.xml
+
+        // and manipulate it for their taste.
+
+        // To use default system recognizers, run
+        // rm -rf ~/.config/eta/eta-gestemas/recognizers.xml
+
+        // QFileInfo fi(recognizersFile);
+        // QString path = fi.path();
+        // QDir dir(path);
+        // if (!dir.exists()) {
+        //     dir.mkpath(".");
+        // }
+        // QFile::copy(GESTEMAS_CONFIG_SYSTEM_PATH, recognizersFile);
+
+        // Use system config as default
+        recognizersFile = QString(GESTEMAS_CONFIG_SYSTEM_PATH);
+        qDebug() << "Using system default recognizers: " << recognizersFile;
+    } else {
+        qDebug() << "Using user defined recognizers: " << recognizersFile;
     }
 
     XLibWindowManagerAdapter windowManagerAdapter(&app);

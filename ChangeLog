@@ -1,6 +1,11 @@
+2016-03-22  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
+
+	* CMakeLists.txt, ChangeLog, README.md, recognizers.xml,
+	src/main.cpp: Use default system config recognizers
+
 2016-03-16  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
 
-	* README.md: Fix README Packaging section
+	* ChangeLog, README.md: Fix README Packaging section
 
 2016-03-16  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
 

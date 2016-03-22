@@ -85,10 +85,17 @@ applications through D-Bus.
 ### Configuration
 
 Each user can adjust the default configuration for his/her taste. Configuration
-file is installed at `/etc/eta/eta-gestemas/recognizers.xml`. When eta-gestemas
-first runs, user configuration file is copied to
-`~/.config/eta/eta-gestemas/recognizers.xml` Please see
-[the default configuration file][config-file].
+file is installed at `/etc/eta/eta-gestemas/recognizers.xml`. Users can copy
+this configuration file to `~/.config/eta/eta-gestemas/recognizers.xml` and
+modify it. `eta-gestemas` will use this customized configuration file when it is
+restarted. Please see [the default configuration file][config-file].
+
+
+```bash
+mkdir -p ~/.config/eta/eta-gestemas
+cp /etc/eta/eta-gestemas/recognizers.xml ~/.config/eta/eta-gestemas/recognizers.xml
+# Now you can modify ~/.config/eta/eta-gestemas/recognizers.xml
+```
 
 ## Building
 

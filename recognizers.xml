@@ -28,7 +28,7 @@
       <LongPress id="9">
         <numTouchesRequired>1</numTouchesRequired>
         <!-- minPressDuration > samplingPeriod -->
-        <minPressDuration>115</minPressDuration>
+        <minPressDuration>200</minPressDuration>
         <recognitionThreshold>9.0</recognitionThreshold>
         <abortList>
           <allowSimultaneousRecognition>true</allowSimultaneousRecognition>

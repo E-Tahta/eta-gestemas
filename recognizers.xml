@@ -171,9 +171,15 @@
 
   <!-- Private targets are subject to their local gesture recognizers only -->
   <PrivateTarget>
-    <name>etak</name> <!-- Our virtual keyboard -->
+    <name>etak</name> <!-- Our old virtual keyboard -->
   </PrivateTarget>
   <PrivateTarget>
+    <name>google-chrome</name>
+  </PrivateTarget>
+  <PrivateTarget>
+  <PrivateTarget>
+    <name>chromium-browser</name>
+  </PrivateTarget>
     <name>Eog</name>
     <GestureRecognizers>
       <!-- Single-touch long press triggers right click -->

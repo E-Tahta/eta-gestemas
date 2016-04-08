@@ -1,3 +1,12 @@
+2016-04-08  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
+
+	* README.md: Fix workflow error
+
+2016-04-05  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
+
+	* CMakeLists.txt, recognizers.xml: Add google-chrome and
+	chromium-browser as  private targets
+
 2016-03-22  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
 
 	* CMakeLists.txt, ChangeLog, README.md, recognizers.xml,

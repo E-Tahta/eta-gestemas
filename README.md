@@ -139,7 +139,7 @@ git rebase -i master # rebase onto master
 # Update ChangeLog
 sudo apt-get install git2cl # in case you don't have it.
 git log topic/your-branch --pretty --numstat --summary --no-merges | git2cl > ChangeLog
-git commit add ChangeLog
+git add ChangeLog
 git commit --amend # Amend ChangeLog changes, but don't change last commit message
 
 # Now we can merge topic/your-branch into master

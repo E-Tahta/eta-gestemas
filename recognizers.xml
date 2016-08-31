@@ -24,22 +24,6 @@
           </PressReleaseShortcut>
         </XTestSimple>
       </LongPress>
-      <!-- We need this for Firefox and live-installer comboboxes to work -->
-      <LongPress id="9">
-        <numTouchesRequired>1</numTouchesRequired>
-        <!-- minPressDuration > samplingPeriod -->
-        <minPressDuration>200</minPressDuration>
-        <recognitionThreshold>9.0</recognitionThreshold>
-        <abortList>
-          <allowSimultaneousRecognition>true</allowSimultaneousRecognition>
-        </abortList>
-        <XTestSimple>
-          <PressReleaseShortcut>
-            <onEnded>press-release</onEnded>
-            <button>1</button>
-          </PressReleaseShortcut>
-        </XTestSimple>
-      </LongPress>
       <!-- Two-touch long press triggers window move -->
       <LongPress id="2">
         <numTouchesRequired>2</numTouchesRequired>
@@ -68,7 +52,7 @@
           </MoveShortcut>
         </XTestMove>
       </Pan>
-      <!-- Two-touch pan twiggers scroll -->
+      <!-- Two-touch pan triggers scroll -->
       <Pan id="4">
         <maxNumTouchesRequired>2</maxNumTouchesRequired>
         <minNumTouchesRequired>2</minNumTouchesRequired>
@@ -166,7 +150,94 @@
     </GestureRecognizers>
   </GlobalTarget>
   <!-- Public gesture recognizers get merged with global ones -->
+
+  <!-- Firefox comboboxes won't appear otherwise -->
   <PublicTarget>
+    <name>Firefox</name>
+    <GestureRecognizers>
+      <!-- We need this for Firefox and live-installer comboboxes to work -->
+      <LongPress id="100">
+        <numTouchesRequired>1</numTouchesRequired>
+        <!-- minPressDuration > samplingPeriod -->
+        <minPressDuration>200</minPressDuration>
+        <recognitionThreshold>9.0</recognitionThreshold>
+        <abortList>
+          <allowSimultaneousRecognition>true</allowSimultaneousRecognition>
+        </abortList>
+        <XTestSimple>
+          <PressReleaseShortcut>
+            <onEnded>press-release</onEnded>
+            <button>1</button>
+          </PressReleaseShortcut>
+        </XTestSimple>
+      </LongPress>
+    </GestureRecognizers>
+  </PublicTarget>
+
+  <!-- GParted comboboxes won't appear otherwise -->
+  <PublicTarget>
+    <name>GParted</name>
+    <GestureRecognizers>
+      <!-- We need this for Firefox and live-installer comboboxes to work -->
+      <LongPress id="200">
+        <numTouchesRequired>1</numTouchesRequired>
+        <!-- minPressDuration > samplingPeriod -->
+        <minPressDuration>200</minPressDuration>
+        <recognitionThreshold>9.0</recognitionThreshold>
+        <abortList>
+          <allowSimultaneousRecognition>true</allowSimultaneousRecognition>
+        </abortList>
+        <XTestSimple>
+          <PressReleaseShortcut>
+            <onEnded>press-release</onEnded>
+            <button>1</button>
+          </PressReleaseShortcut>
+        </XTestSimple>
+      </LongPress>
+    </GestureRecognizers>
+  </PublicTarget>
+
+  <!-- Impress full screen -->
+  <PublicTarget>
+    <name>LibreOffice 4.3</name>
+    <GestureRecognizers>
+      <!-- Go prev slide on swipe down -->
+      <Swipe id="300">
+        <numTouchesRequired>1</numTouchesRequired>
+        <maxDuration>150</maxDuration>
+        <minDisplacement>60.0</minDisplacement>
+        <maxAngle>40.0</maxAngle>
+        <direction>Down</direction>
+        <recognitionThreshold>10.0</recognitionThreshold>
+        <abortList>
+          <allowSimultaneousRecognition>false</allowSimultaneousRecognition>
+        </abortList>
+        <XTestSimple>
+          <PressReleaseShortcut>
+            <onRecognized>press-release</onRecognized>
+            <button>4</button>
+          </PressReleaseShortcut>
+        </XTestSimple>
+      </Swipe>
+      <!-- Go prev slide on swipe right -->
+      <Swipe id="301">
+        <numTouchesRequired>1</numTouchesRequired>
+        <maxDuration>150</maxDuration>
+        <minDisplacement>60.0</minDisplacement>
+        <maxAngle>40.0</maxAngle>
+        <direction>Right</direction>
+        <recognitionThreshold>10.0</recognitionThreshold>
+        <abortList>
+          <allowSimultaneousRecognition>false</allowSimultaneousRecognition>
+        </abortList>
+        <XTestSimple>
+          <PressReleaseShortcut>
+            <onRecognized>press-release</onRecognized>
+            <button>4</button>
+          </PressReleaseShortcut>
+        </XTestSimple>
+      </Swipe>
+    </GestureRecognizers>
   </PublicTarget>
 
   <!-- Private targets are subject to their local gesture recognizers only -->
@@ -177,9 +248,9 @@
     <name>google-chrome</name>
   </PrivateTarget>
   <PrivateTarget>
-  <PrivateTarget>
     <name>chromium-browser</name>
   </PrivateTarget>
+  <PrivateTarget>
     <name>Eog</name>
     <GestureRecognizers>
       <!-- Single-touch long press triggers right click -->
@@ -343,48 +414,6 @@
       </Tap>
     </GestureRecognizers>
   </PrivateTarget>
-  <!-- Impress full screen -->
-  <PublicTarget>
-    <name>LibreOffice 4.3</name>
-    <GestureRecognizers>
-      <!-- Go prev slide on swipe down -->
-      <Swipe id="3">
-        <numTouchesRequired>1</numTouchesRequired>
-        <maxDuration>150</maxDuration>
-        <minDisplacement>60.0</minDisplacement>
-        <maxAngle>40.0</maxAngle>
-        <direction>Down</direction>
-        <recognitionThreshold>10.0</recognitionThreshold>
-        <abortList>
-          <allowSimultaneousRecognition>false</allowSimultaneousRecognition>
-        </abortList>
-        <XTestSimple>
-          <PressReleaseShortcut>
-            <onRecognized>press-release</onRecognized>
-            <button>4</button>
-          </PressReleaseShortcut>
-        </XTestSimple>
-      </Swipe>
-      <!-- Go prev slide on swipe right -->
-      <Swipe id="5">
-        <numTouchesRequired>1</numTouchesRequired>
-        <maxDuration>150</maxDuration>
-        <minDisplacement>60.0</minDisplacement>
-        <maxAngle>40.0</maxAngle>
-        <direction>Right</direction>
-        <recognitionThreshold>10.0</recognitionThreshold>
-        <abortList>
-          <allowSimultaneousRecognition>false</allowSimultaneousRecognition>
-        </abortList>
-        <XTestSimple>
-          <PressReleaseShortcut>
-            <onRecognized>press-release</onRecognized>
-            <button>4</button>
-          </PressReleaseShortcut>
-        </XTestSimple>
-      </Swipe>
-    </GestureRecognizers>
-  </PublicTarget>
   <PrivateTarget>
     <name>Plasma-desktop</name>
   </PrivateTarget>

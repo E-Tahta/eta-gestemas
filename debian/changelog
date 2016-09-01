@@ -1,3 +1,10 @@
+eta-gestemas (0.1.10-1) unstable; urgency=medium
+
+  * [6b050d8] Fix snippets in README.md
+  * [d82a25d] Add Firefox and GParted to recognizers.xml
+
+ -- Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>  Thu, 01 Sep 2016 17:00:48 +0300
+
 eta-gestemas (0.1.9-1) unstable; urgency=medium
 
   * local package

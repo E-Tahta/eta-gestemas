@@ -1,6 +1,15 @@
+2016-08-31  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
+
+	* README.md, recognizers.xml: Add Firefox and GParted to
+	recognizers.xml
+
+2016-08-31  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
+
+	* README.md: Fix snippets in README.md
+
 2016-04-08  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
 
-	* README.md: Fix workflow error
+	* ChangeLog, README.md: Fix workflow error
 
 2016-04-05  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
 

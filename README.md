@@ -91,7 +91,7 @@ modify it. `eta-gestemas` will use this customized configuration file when it is
 restarted. Please see [the default configuration file][config-file].
 
 
-```bash
+```
 mkdir -p ~/.config/eta/eta-gestemas
 cp /etc/eta/eta-gestemas/recognizers.xml ~/.config/eta/eta-gestemas/recognizers.xml
 # Now you can modify ~/.config/eta/eta-gestemas/recognizers.xml
@@ -101,7 +101,7 @@ cp /etc/eta/eta-gestemas/recognizers.xml ~/.config/eta/eta-gestemas/recognizers.
 
 Run the following to build eta-gestemas on a debian based distro.
 
-```bash
+```
 sudo apt-get install cmake libx11-dev libxext-dev libxi-dev libxtst-dev \
 qt5-default libframe-dev
 cd path/to/this/project
@@ -110,8 +110,8 @@ cmake .. -DBUILD_MAN=ON -DBUILD_DOC=ON
 make
 make test # To run automated tests
 # if you don't want to install
-cd build
-./eta_gestemas recognizers.xml
+cd build/src
+./eta-gestemas ../recognizers.xml
 # to install it
 sudo make install
 eta-gestemas & # Run it or restart for auto run
@@ -125,7 +125,7 @@ rebase (preferably interactive rebase) it onto master. After rebasing, update
 
 Here is how you can do that.
 
-```bash
+```
 git checkout -b topic/your-branch master
 git commit -am "Add your changes"
 git commit -am "Add your another change"
@@ -140,7 +140,7 @@ git rebase -i master # rebase onto master
 sudo apt-get install git2cl # in case you don't have it.
 git log topic/your-branch --pretty --numstat --summary --no-merges | git2cl > ChangeLog
 git add ChangeLog
-git commit --amend # Amend ChangeLog changes, but don't change last commit message
+git commit --amend --no-edit # Amend ChangeLog changes, but don't change last commit message
 
 # Now we can merge topic/your-branch into master
 git checkout master
@@ -157,7 +157,7 @@ and build debian package.
 
 Here is how you could create a debian package.
 
-```bash
+```
 git checkout master
 git pull
 git checkout debian/sid
@@ -173,7 +173,7 @@ gbp buildpackage -us -uc --git-tag
 If your distro has built-in gestures, you should first disable them. Run the
 following to use eta-gestemas with your touchpad, if you are using synaptics.
 
-```bash
+```
   synclient TapButton2=0
   synclient TapButton3=0
   synclient ClickFinger2=0

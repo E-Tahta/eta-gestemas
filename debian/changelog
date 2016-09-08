@@ -1,3 +1,9 @@
+eta-gestemas (0.1.11-1) unstable; urgency=medium
+
+  * [6c08bf8] Make eta-pen private
+
+ -- Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>  Thu, 08 Sep 2016 13:53:30 +0300
+
 eta-gestemas (0.1.10-1) unstable; urgency=medium
 
   * [6b050d8] Fix snippets in README.md

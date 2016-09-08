@@ -420,4 +420,7 @@
   <PrivateTarget>
     <name>Wine</name>
   </PrivateTarget>
+  <PrivateTarget>
+    <name>eta-pen</name>
+  </PrivateTarget>
 </gestemas>

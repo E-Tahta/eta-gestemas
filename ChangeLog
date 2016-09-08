@@ -1,6 +1,10 @@
+2016-09-08  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
+
+	* recognizers.xml: Make eta-pen private
+
 2016-08-31  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
 
-	* README.md, recognizers.xml: Add Firefox and GParted to
+	* ChangeLog, README.md, recognizers.xml: Add Firefox and GParted to
 	recognizers.xml
 
 2016-08-31  Gökhan Karabulut <gokhan.karabulut@tubitak.gov.tr>

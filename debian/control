@@ -1,7 +1,7 @@
 Source: eta-gestemas
 Section: misc
 Priority: optional
-Maintainer: Gokhan Karabulut <gokhan.karabulut@tubitak.gov.tr>
+Maintainer: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
 Build-Depends: debhelper (>= 9), cmake,
                qtbase5-dev (>=5.3),
                libframe-dev (>=2.5),
@@ -11,8 +11,6 @@ Build-Depends: debhelper (>= 9), cmake,
                libxi-dev
 Standards-Version: 3.9.6
 Homepage: https://git.pardus.org.tr
-#Vcs-Git: git://anonscm.debian.org/collab-maint/eta-gestemas.git
-#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/eta-gestemas.git;a=summary
 
 Package: eta-gestemas
 Architecture: amd64

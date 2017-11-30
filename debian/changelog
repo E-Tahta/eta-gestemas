@@ -1,3 +1,15 @@
+eta-gestemas (0.1.11-2) unstable; urgency=medium
+
+  * [de9edc4] Update gbp.conf for clean build
+  * [09201e7] Update control file take charge of maintanance.
+    Signed-off-by: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
+  * [fa9b407] Add patches.
+    Signed-off-by: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
+  * [2d7dcd2] Add run-time dependency eta-check-optictouch.
+    Signed-off-by: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Thu, 30 Nov 2017 12:07:50 +0300
+
 eta-gestemas (0.1.11-1) unstable; urgency=medium
 
   * [6c08bf8] Make eta-pen private

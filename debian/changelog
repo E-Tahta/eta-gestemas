@@ -1,3 +1,10 @@
+eta-gestemas (0.1.11-3) unstable; urgency=medium
+
+  * [7ad1a26] Add patches.
+    Signed-off-by: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Mon, 04 Dec 2017 16:54:57 +0300
+
 eta-gestemas (0.1.11-2) unstable; urgency=medium
 
   * [de9edc4] Update gbp.conf for clean build

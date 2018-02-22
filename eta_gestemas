@@ -15,10 +15,19 @@ echo -e "${YEL}$0${NC} : running as ${YEL}$u" >> $LOG_FILE
 
 while true
 do
+    pid=$(pgrep -f "/usr/bin/eta-gestemas")
     if [[ -f $OPTICTOUCH_PID ]]; then
-        sleep 3
-        echo -e "${YEL}$0${NC} : optictouch pid found calling ${YEL}/usr/bin/eta-gestemas" >> $LOG_FILE
-        /usr/bin/eta-gestemas
+        if [  -z "$pid" ]; then
+            sleep 3
+            echo -e "${YEL}$0${NC} : optictouch pid found calling ${YEL}/usr/bin/eta-gestemas" >> $LOG_FILE
+            /usr/bin/eta-gestemas &
+        fi
+    else
+        if [ ! -z "$pid" ]; then
+            echo -e "${YEL}$0${NC} : optictouch pid not found terminating ${YEL}eta-gestemas" >> $LOG_FILE
+            kill ${pid}
+        fi
     fi
     sleep 1
 done
+

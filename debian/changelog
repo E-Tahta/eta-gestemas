@@ -1,9 +1,9 @@
-eta-gestemas (0.1.11-4) unstable; urgency=medium
+eta-gestemas (0.1.12) stable; urgency=medium
 
   * [227c0be] Add patches and make it more stable.
     Signed-off-by: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
 
- -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Thu, 22 Feb 2018 17:10:33 +0300
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Wed, 17 Oct 2018 15:34:05 +0300
 
 eta-gestemas (0.1.11-3) unstable; urgency=medium
 

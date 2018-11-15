@@ -1,3 +1,10 @@
+eta-gestemas (0.1.14) stable; urgency=medium
+
+  * Move default recognizers location from etc to usr/share
+  * Fix combobox issue also in Firefox-esr
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Thu, 15 Nov 2018 12:32:38 +0300
+
 eta-gestemas (0.1.13) stable; urgency=medium
 
   * Remove patches since its native package

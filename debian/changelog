@@ -1,3 +1,10 @@
+eta-gestemas (0.1.13) stable; urgency=medium
+
+  * Remove patches since its native package
+  * Update wrapper script
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Thu, 15 Nov 2018 11:16:37 +0300
+
 eta-gestemas (0.1.12) stable; urgency=medium
 
   * [227c0be] Add patches and make it more stable.

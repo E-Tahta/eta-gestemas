@@ -16,7 +16,7 @@ set(GESTEMAS_APPLICATION_DESCRIPTION
 
 # Default gesture recognizers system path
 set(GESTEMAS_CONFIG_SYSTEM_PATH
-  "/etc/eta/eta-gestemas/recognizers.xml")
+  "/usr/share/eta/eta-gestemas/recognizers.xml")
 
 # User defined gesture recognizers user path
 set(GESTEMAS_CONFIG_USER_PATH

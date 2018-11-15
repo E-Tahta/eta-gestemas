@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
         // Users can manually copy with
 
         // mkdir -p ~/.config/eta/eta-gestemas &&   \
-        // cp /etc/eta/eta-gestemas/recognizers.xml \
+        // cp /usr/share/eta/eta-gestemas/recognizers.xml \
         // ~/.config/eta/eta-gestemas/recognizers.xml
 
         // and manipulate it for their taste.

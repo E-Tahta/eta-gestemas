@@ -1,3 +1,9 @@
+eta-gestemas (0.1.15) stable; urgency=medium
+
+  * Change dependency on eta-check-inputdevice
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Mon, 26 Nov 2018 10:13:39 +0300
+
 eta-gestemas (0.1.14) stable; urgency=medium
 
   * Move default recognizers location from etc to usr/share

@@ -14,7 +14,7 @@ Homepage: https://git.pardus.org.tr
 
 Package: eta-gestemas
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, eta-check-optictouch
+Depends: ${shlibs:Depends}, ${misc:Depends}, eta-check-inputdevice
 Description: Multitouch Gesture Recognition Application
  Fully configurable multitouch gesture recognition
  application for GNU/Linux distros.
